@@ -51,6 +51,7 @@
 1. Get container ID `docker ps -a`
 2. Persist the container `docker commit <CONTAINER ID> my-kali`
 3. Run it back `docker run -ti my-kali /bin/bash`
+4. List all committed images `docker images`
 
 
 ## Hacker Stuff
