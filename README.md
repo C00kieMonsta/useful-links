@@ -28,7 +28,7 @@
 > **_NOTE:_**  Once exited, everything is lost.
 
 4. Some basic setups inside the docker VM:
-    a) `apt update`
-    b) `apt dist-upgrade`
-    c) `apt autoremove`
-    d) `apt clean`
+    1. `apt update`
+    2. `apt dist-upgrade`
+    3. `apt autoremove`
+    4. `apt clean`
