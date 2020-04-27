@@ -34,3 +34,20 @@
     4. `apt clean`
 
 5. The VM is not ready to use, install whathever you want...
+
+### Kali Linux Instance
+
+1. Get Kali image `docker pull kalilinux/kali-rolling`
+2. Run the image `docker run -ti kalilinux/kali-rolling /bin/bash`
+3. Basic setups
+4. Installing Hydra for brute force code breaking
+    1. `apt install hydra`
+    2. `apt install hydra hydra-gtk`
+    3. `apt install wordlists`
+    4. `gunzip /usr/share/wordlists/rockyou.txt.gz`
+
+### Persist VM
+
+1. Get container ID `docker ps -a`
+2. Persist the container `docker commit <CONTAINER ID> my-kali`
+3. Run it back `docker run -ti my-kali /bin/bash`
