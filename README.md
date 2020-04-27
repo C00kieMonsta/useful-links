@@ -51,3 +51,10 @@
 1. Get container ID `docker ps -a`
 2. Persist the container `docker commit <CONTAINER ID> my-kali`
 3. Run it back `docker run -ti my-kali /bin/bash`
+
+
+## Hacker Stuff
+
+- Hacker website with useful resources: https://www.hacker101.com/
+- Catch The Flag: https://ctf.hacker101.com/ctf
+- Binary Exploit: https://trailofbits.github.io/ctf/exploits/binary1.html
