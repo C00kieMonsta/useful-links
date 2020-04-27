@@ -58,3 +58,4 @@
 - Hacker website with useful resources: https://www.hacker101.com/
 - Catch The Flag: https://ctf.hacker101.com/ctf
 - Binary Exploit: https://trailofbits.github.io/ctf/exploits/binary1.html
+- Hacker One: https://www.hackerone.com/
