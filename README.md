@@ -33,7 +33,7 @@
     3. `apt autoremove`
     4. `apt clean`
 
-5. The VM is not ready to use, install whathever you want...
+5. The VM is now ready to use, install whathever you want...
 
 ### Kali Linux Instance
 
