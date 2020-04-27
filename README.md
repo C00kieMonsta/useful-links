@@ -25,7 +25,7 @@
 2. Get image you want `docker pull some-linux-image`
 3. Run the image `docker run -ti some-linux-image /bin/bash`
 
-> **_NOTE:_**  Once exited, everything is lost.
+> **_NOTE:_**  Once exited, the container is stopped. You can restart it by `docker ps -a` and with the name of the container `docker start -ai <NAME_CONTAINER>`
 
 4. Some basic setups inside the docker VM:
     1. `apt update`
@@ -53,6 +53,7 @@
 3. Run it back `docker run -ti my-kali /bin/bash`
 4. List all committed images `docker images`
 
+> **_NOTE:_**  An Image is blueprint/snapshot of a container. So the container is like an instance of this Image. Each time the image is being run, it creates a new container.
 
 ## Hacker Stuff
 
