@@ -1,4 +1,4 @@
-# USEFUL LINKS
+# USEFUL LINKS & NOTES
 
 ## UI
 
@@ -18,3 +18,17 @@
 - LearnCode.Academy: https://www.youtube.com/channel/UCVTlvUkGslCV_h-nSAId8Sw
 - freeCodeCamp: https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ
 - Jabrils: https://www.youtube.com/channel/UCQALLeQPoZdZC4JNUboVEUg
+
+## Starting a Docker instance
+
+1. Install docker (https://www.docker.com/get-started)
+2. Get image you want `docker pull some-linux-image`
+3. Run the image `docker run -ti some-linux-image /bin/bash`
+
+> **_NOTE:_**  Once exited, everything is lost.
+
+4. Some basic setups inside the docker VM:
+    a) `apt update`
+    b) `apt dist-upgrade`
+    c) `apt autoremove`
+    d) `apt clean`
