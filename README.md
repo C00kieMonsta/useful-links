@@ -1,17 +1,15 @@
-# USEFUL LINKS & NOTES
+# USEFUL RESOURCES & TRICKS
 
-## UI
+## LINKS
 
+### UI
 - https://unsplash.com
 - https://undraw.co/illustrations
 
-## GIT REPOS
-
+### GIT REPOS
 - https://github.com/github/gitignore
 
-
-## YouTube Channels
-
+### YouTube Channels
 - 3blue1brown [Random Math]: https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw
 - Tom Scott [Random]: https://www.youtube.com/channel/UCBa659QWEk1AI4Tg--mrJ2A
 - Computerphile [Fundamentals]: https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA
@@ -20,16 +18,23 @@
 - Jabrils [ML]: https://www.youtube.com/channel/UCQALLeQPoZdZC4JNUboVEUg
 - javidx9 [CS]: https://www.youtube.com/channel/UC-yuWVUplUJZvieEligKBkA
 
-## Favorite Online Courses
-
+### Favorite Online Courses
 - CS50 (David Malan & Co.): https://online-learning.harvard.edu/course/cs50-introduction-computer-science
 - Andre Ng (God of ML): https://www.coursera.org/learn/machine-learning
 
-## Random Links
+### Hacker Stuff
+- Hacker website with useful resources: https://www.hacker101.com/
+- Catch The Flag: https://ctf.hacker101.com/ctf
+- Binary Exploit: https://trailofbits.github.io/ctf/exploits/binary1.html
+- Hacker One: https://www.hackerone.com/
+- HackerSploit: https://www.youtube.com/channel/UC0ZTPkdxlAKf-V33tqXwi3Q
 
+### Random Links
 - Stuff about CS: https://www.geeksforgeeks.org/
 
-## Starting a Docker instance
+## TRICKS
+
+### Starting a Docker instance
 
 1. Install docker (https://www.docker.com/get-started)
 2. Get image you want `docker pull some-linux-image`
@@ -45,7 +50,7 @@
 
 5. The VM is now ready to use, install whathever you want...
 
-### Kali Linux Instance
+#### Kali Linux Instance
 
 1. Get Kali image `docker pull kalilinux/kali-rolling`
 2. Run the image `docker run -ti kalilinux/kali-rolling /bin/bash`
@@ -56,28 +61,24 @@
     3. `apt install wordlists`
     4. `gunzip /usr/share/wordlists/rockyou.txt.gz`
 
-### Persist VM
+#### Persist VM
 
 1. Get container ID `docker ps -a`
 2. Persist the container `docker commit <CONTAINER ID> my-kali`
 3. Run it back `docker run -ti my-kali /bin/bash`
 4. List all committed images `docker images`
 
-### Restart a container
+#### Restart a container
 
 1. Get container ID `docker ps -a`
 2. Restart specific container `docker start -ai <CONTAINER ID>`
 
 > **_NOTE:_**  An Image is blueprint/snapshot of a container. So the container is like an instance of this Image. Each time the image is being run, it creates a new container.
 
-## Hacker Stuff
 
-- Hacker website with useful resources: https://www.hacker101.com/
-- Catch The Flag: https://ctf.hacker101.com/ctf
-- Binary Exploit: https://trailofbits.github.io/ctf/exploits/binary1.html
-- Hacker One: https://www.hackerone.com/
+## CODE SNIPPETS
 
-## Bash Customisation
+### Bash Customisation
 
 It is always nice to custom your bash:
 
