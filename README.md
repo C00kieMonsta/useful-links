@@ -61,3 +61,27 @@
 - Catch The Flag: https://ctf.hacker101.com/ctf
 - Binary Exploit: https://trailofbits.github.io/ctf/exploits/binary1.html
 - Hacker One: https://www.hackerone.com/
+
+## Bash Customisation
+
+It is always nice to custom your bash:
+
+1. Go to `cd ~`
+2. Edit the hidden .bash_profile file `vi .bash_profile`
+3. Refresh file `source ~/.bash_profile`
+
+```bash
+# Git Branch
+
+parse_git_branch() {
+   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+
+# Folder Color
+
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]Darwin:\[\033[33;1m\]\w\[\033[m\]\[\033[32m\]\$(parse_git_branch)\[\033[00m\]$ "
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+alias ls='ls -GFh'
+```
