@@ -12,12 +12,22 @@
 
 ## YouTube Channels
 
-- 3blue1brown: https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw
-- Tom Scott: https://www.youtube.com/channel/UCBa659QWEk1AI4Tg--mrJ2A
-- Computerphile: https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA
-- LearnCode.Academy: https://www.youtube.com/channel/UCVTlvUkGslCV_h-nSAId8Sw
-- freeCodeCamp: https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ
-- Jabrils: https://www.youtube.com/channel/UCQALLeQPoZdZC4JNUboVEUg
+- 3blue1brown [Random Math]: https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw
+- Tom Scott [Random]: https://www.youtube.com/channel/UCBa659QWEk1AI4Tg--mrJ2A
+- Computerphile [Fundamentals]: https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA
+- LearnCode.Academy [CS]: https://www.youtube.com/channel/UCVTlvUkGslCV_h-nSAId8Sw
+- freeCodeCamp [CS]: https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ
+- Jabrils [ML]: https://www.youtube.com/channel/UCQALLeQPoZdZC4JNUboVEUg
+- javidx9 [CS]: https://www.youtube.com/channel/UC-yuWVUplUJZvieEligKBkA
+
+## Favorite Online Courses
+
+- CS50 (David Malan & Co.): https://online-learning.harvard.edu/course/cs50-introduction-computer-science
+- Andre Ng (God of ML): https://www.coursera.org/learn/machine-learning
+
+## Random Links
+
+- Stuff about CS: https://www.geeksforgeeks.org/
 
 ## Starting a Docker instance
 
