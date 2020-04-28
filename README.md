@@ -57,6 +57,8 @@
 3. Run it back `docker run -ti my-kali /bin/bash`
 4. List all committed images `docker images`
 
+> **_NOTE:_**  There are two ways to create a Docker image, (1) write a Dockerfile and run docker build on it, (2) run a container, make changes and run docker commit to create a new image. Committing a container to create a new image is not ideal. Dockerfiles for reproducible images (see repo https://github.com/C00kieMonsta/kali-image).
+
 #### Restart a container
 
 1. Get container ID `docker ps -a`
