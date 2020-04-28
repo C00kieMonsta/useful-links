@@ -63,6 +63,11 @@
 3. Run it back `docker run -ti my-kali /bin/bash`
 4. List all committed images `docker images`
 
+### Restart a container
+
+1. Get container ID `docker ps -a`
+2. Restart specific container `docker start -ai <CONTAINER ID>`
+
 > **_NOTE:_**  An Image is blueprint/snapshot of a container. So the container is like an instance of this Image. Each time the image is being run, it creates a new container.
 
 ## Hacker Stuff
