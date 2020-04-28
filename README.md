@@ -19,6 +19,15 @@
 - freeCodeCamp: https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ
 - Jabrils: https://www.youtube.com/channel/UCQALLeQPoZdZC4JNUboVEUg
 
+## Favorite Online Courses
+
+- CS50 (David Malan & Co.): https://online-learning.harvard.edu/course/cs50-introduction-computer-science
+- Andre Ng (God of ML): https://www.coursera.org/learn/machine-learning
+
+## Random Links
+
+- Stuff about CS: https://www.geeksforgeeks.org/
+
 ## Starting a Docker instance
 
 1. Install docker (https://www.docker.com/get-started)
