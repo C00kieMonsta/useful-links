@@ -32,7 +32,7 @@
 ### Random Links
 - Stuff about CS: https://www.geeksforgeeks.org/
 
-## TRICKS
+## DOCKER TRICKS
 
 ### Starting a Docker instance
 
@@ -87,6 +87,22 @@
 4. You then want to start the ssh server: `service ssh start`
 5. Next you want to know the local IP address of the VM (you might need to install the `net-tool` package): `ifconfig`
 6. On you machine, open a bash console and run: `ssh root@<ip>`
+
+
+## PYTHON TIPS
+
+### Setup of python project
+
+#### Setup env
+
+`python3 -m venv env`
+`source ./env/bin/activate`
+
+#### Install dependencies inside env
+
+`python -m pip install numpy`
+`python -m pip install matplotlib`
+
 
 ## CODE SNIPPETS
 
