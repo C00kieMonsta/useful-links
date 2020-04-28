@@ -50,17 +50,6 @@
 
 5. The VM is now ready to use, install whathever you want...
 
-#### Kali Linux Instance
-
-1. Get Kali image `docker pull kalilinux/kali-rolling`
-2. Run the image `docker run -ti kalilinux/kali-rolling /bin/bash`
-3. Basic setups
-4. Installing Hydra for brute force code breaking
-    1. `apt install hydra`
-    2. `apt install hydra hydra-gtk`
-    3. `apt install wordlists`
-    4. `gunzip /usr/share/wordlists/rockyou.txt.gz`
-
 #### Persist VM
 
 1. Get container ID `docker ps -a`
@@ -75,6 +64,29 @@
 
 > **_NOTE:_**  An Image is blueprint/snapshot of a container. So the container is like an instance of this Image. Each time the image is being run, it creates a new container.
 
+
+### Kali Linux Instance
+
+> **_NOTE:_**  A Debian-derived Linux distribution designed for digital forensics and penetration testing.
+
+1. Get Kali image `docker pull kalilinux/kali-rolling`
+2. Run the image `docker run -ti kalilinux/kali-rolling /bin/bash`
+3. Basic setups
+4. Installing Hydra for brute force code breaking
+    1. `apt install hydra`
+    2. `apt install hydra hydra-gtk`
+    3. `apt install wordlists`
+    4. `gunzip /usr/share/wordlists/rockyou.txt.gz`
+
+
+### Setup SSH on Instance
+
+1. Install openssh package: `apt-get install openssh-server`
+2. (If package was wrongly configured, you can reconfigure it with the debian package manager: `dpkg-reconfigure openssh-server`)
+3. Refactor the `sshd_config` file to configure the ssh options: `vi /etc/ssh/sshd_config`
+4. You then want to start the ssh server: `service ssh start`
+5. Next you want to know the local IP address of the VM (you might need to install the `net-tool` package): `ifconfig`
+6. On you machine, open a bash console and run: `ssh root@<ip>`
 
 ## CODE SNIPPETS
 
