@@ -18,7 +18,7 @@
 - Jabrils [ML]: https://www.youtube.com/channel/UCQALLeQPoZdZC4JNUboVEUg
 - javidx9 [CS]: https://www.youtube.com/channel/UC-yuWVUplUJZvieEligKBkA
 
-### Favorite Online Courses
+### Online Courses
 - CS50 (David Malan & Co.): https://online-learning.harvard.edu/course/cs50-introduction-computer-science
 - Andre Ng (God of ML): https://www.coursera.org/learn/machine-learning
 
