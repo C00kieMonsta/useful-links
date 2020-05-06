@@ -16,6 +16,11 @@ Machine Learning algorithm can be divided into 4 categories. Knowing the type of
 - Andre Ng (God of ML): https://www.coursera.org/learn/machine-learning
 - SendtDex: https://pythonprogramming.net/
 - MIT 6.034 Artificial Intelligence: https://www.youtube.com/playlist?list=PLUl4u3cNGP63gFHB6xb-kVBiQHYe_4hSi
+- Udemy: https://www.udemy.com/course/deep-learning-tensorflow-2/
 
 ### Random Links
 - https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
+
+### Books
+- https://www.amazon.com/Advanced-Deep-Learning-Python-next-generation/dp/178995617X
+- https://www.manning.com/books/deep-learning-with-python
