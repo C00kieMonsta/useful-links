@@ -9,6 +9,11 @@
 ### GIT REPOS
 - https://github.com/github/gitignore
 
+### Helper Tools
+- API Builder: https://postwoman.io/
+- API Builder: https://www.postman.com/
+- Hosting: https://vercel.com/
+
 ### YouTube Channels
 - 3blue1brown [Random Math]: https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw
 - Tom Scott [Random]: https://www.youtube.com/channel/UCBa659QWEk1AI4Tg--mrJ2A
