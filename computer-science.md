@@ -143,16 +143,38 @@ It is always nice to custom your bash:
 
 ```bash
 # Git Branch
-
 parse_git_branch() {
    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
 
 # Folder Color
-
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\[\033[32m\]\$(parse_git_branch)\[\033[00m\]$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -GFh'
+```
+
+### zsh customisation
+
+It is always nice to custom your zshell:
+
+1. Go to `cd ~`
+2. Edit the hidden .zshrc file `vi .zshrc`
+3. Refresh file `source ~/.zshrc`
+
+```zsh
+# Load colors
+autoload -U colors && colors
+
+# Load version control information
+autoload -Uz vcs_info
+precmd() { vcs_info }
+
+# Format the vcs_info_msg_0_ variable
+zstyle ':vcs_info:git:*' formats ' %F{6}[⏎%b]%f'
+ 
+# Set up the prompt (with git branch name)
+setopt PROMPT_SUBST
+PROMPT='%F{208}%n%f@%F{226}%~%f${vcs_info_msg_0_} > '
 ```
