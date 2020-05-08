@@ -111,6 +111,25 @@
 `python -m pip install matplotlib`
 
 
+## BASH TIPS
+
+### How to create a bash script
+
+1. Turn on executable mode for your script: `chmod +x myscript.sh`
+2. Start your script with an interpreter string `#!/bin/bash`
+3. If script sits in `~/bin`, export the `PATH` in  `~/.profile`: `export PATH="$HOME/bin:$PATH"`
+
+### Where to put bash script
+
+- If you are a system admin and want everyone on the system to be able to run the scripts, place them in `/usr/local/bin`
+
+- If you want them to only be accessible to you, place them in `~/bin`
+
+### Tips to create bash scripts
+
+- http://linuxcommand.org/lc3_writing_shell_scripts.php
+
+
 ## CODE SNIPPETS
 
 ### Bash Customisation
