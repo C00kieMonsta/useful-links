@@ -127,7 +127,8 @@
 
 ### Tips to create bash scripts
 
-- http://linuxcommand.org/lc3_writing_shell_scripts.php
+- Create bash scripts: http://linuxcommand.org/lc3_writing_shell_scripts.php
+- Using screen command: https://linuxize.com/post/how-to-use-linux-screen/
 
 
 ## CODE SNIPPETS
