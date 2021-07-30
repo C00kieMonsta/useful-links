@@ -10,6 +10,22 @@ Machine Learning algorithm can be divided into 4 categories. Knowing the type of
 
 4. Decision Matrix Algorithms
 
+## APIs
+
+- Image Generation API: https://www.bannerbear.com/product/image-generation-api/
+- Copy Generation: http://copy.ai/
+- Backlinks REST API: https://seo-explorer.io/api/
+- Data Labelling: https://cloud.google.com/ai-platform/data-labeling/docs
+- Data Streaming As A Service: https://streamr.network/
+- Headless Browsers: browserless.io
+- Microworkers API: https://api2docs.microworkers.com/index.html
+- NLP API as a service: https://beta.openai.com/
+- SEO Data: http://dataforseo.com/
+- Synonyms Generation: http://www.datamuse.com/api/
+- Words API: https://www.wordsapi.com/
+- Integration Tooling: https://autocode.com/
+
+
 ## LINKS
 
 ### Online Courses
