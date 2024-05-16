@@ -354,3 +354,53 @@ zstyle ':vcs_info:git:*' formats ' %F{6}[⏎%b]%f'
 setopt PROMPT_SUBST
 PROMPT='%F{208}%n%f@%F{226}%~%f${vcs_info_msg_0_} > '
 ```
+
+### VS Code list of extensions
+
+- Template String Converter
+- Prettier - Code formatter
+- Material Icon Theme
+- GitHub Copilot Chat
+- GitHub Copilot
+- ESLint
+- Error Lens
+- Color Highlight
+- Auto Rename Tag
+
+### VS Code customization of use settings JSON file
+
+1. Open user settings JSON file in VS code
+2. Copy paste the below code
+
+```
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "window.zoomLevel": 0,
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "files.autoSave": "onFocusChange",
+  "workbench.editor.limit.value": 5,
+  "workbench.editor.limit.enabled": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.suggestSelection": "first",
+  "terminal.integrated.inheritEnv": false,
+  "prisma.showPrismaDataPlatformNotification": false,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  }
+}
+```
