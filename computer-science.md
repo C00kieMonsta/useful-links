@@ -402,5 +402,8 @@ PROMPT='%F{208}%n%f@%F{226}%~%f${vcs_info_msg_0_} > '
     "**/.DS_Store": true,
     "**/Thumbs.db": true
   }
+  "template-string-converter.enable": true,
+  "template-string-converter.convertWithinTemplateString": true,
+  "template-string-converter.autoRemoveTemplateString": true
 }
 ```
