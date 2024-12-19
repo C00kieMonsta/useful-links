@@ -1,5 +1,18 @@
 # Computer Science Resources
 
+## Useful Shell Commands
+
+- Copy and delete all branches with "feature" in their name:
+
+  ```bash
+  echo "git branch | grep \"feature\*\" | xargs git branch -D" | pbcopy
+  ```
+
+- Search for a specific term in the last 400 entries of git history:
+  ```bash
+  git history -400 | grep "something from history"
+  ```
+
 ## Popular libraries
 
 - Web Server Framework: https://docs.nestjs.com/
@@ -66,7 +79,7 @@
 - Page Speed Insights Automation: https://www.npmjs.com/package/lighthouse-parade
 - Open Source ETL: https://www.singer.io/
 - NLP Processing: https://github.com/huggingface/transformers
-Debugging / Logging	
+  Debugging / Logging
 - Deep Learning: https://keras.io/
 - Pandas API on Apache Spark: https://koalas.readthedocs.io/en/latest/index.html
 - Data Labelling: https://github.com/tzutalin/labelImg
@@ -114,14 +127,15 @@ Debugging / Logging
 - Script Bundler: https://webpack.js.org/concepts/
 - Workflow Automation: http://n8n.io/
 
-
 ## LINKS
 
 ### UI
+
 - https://unsplash.com
 - https://undraw.co/illustrations
 
 ### GIT REPOS
+
 - https://github.com/github/gitignore
 - Notion.so Client Library: https://getsyncr.github.io/notion-sdk/
 - Fast API + React + Docker + Nginx: https://github.com/geekyjaat/fastapi-react
@@ -148,11 +162,13 @@ Debugging / Logging
 - Flask + React Ngnix Tempalte: https://github.com/jovanni-hernandez/docker-compose-nginx-flask-react-boilerplate
 
 ### Helper Tools
+
 - API Builder: https://postwoman.io/
 - API Builder: https://www.postman.com/
 - Hosting: https://vercel.com/
 
 ### YouTube Channels
+
 - 3blue1brown [Random Math]: https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw
 - Tom Scott [Random]: https://www.youtube.com/channel/UCBa659QWEk1AI4Tg--mrJ2A
 - Computerphile [Fundamentals]: https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA
@@ -162,10 +178,12 @@ Debugging / Logging
 - javidx9 [CS]: https://www.youtube.com/channel/UC-yuWVUplUJZvieEligKBkA
 
 ### Online Courses
+
 - CS50 (David Malan & Co.): https://online-learning.harvard.edu/course/cs50-introduction-computer-science
 - Andre Ng (God of ML): https://www.coursera.org/learn/machine-learning
 
 ### Hacker Stuff
+
 - Hacker website with useful resources: https://www.hacker101.com/
 - Catch The Flag: https://ctf.hacker101.com/ctf
 - Binary Exploit: https://trailofbits.github.io/ctf/exploits/binary1.html
@@ -173,6 +191,7 @@ Debugging / Logging
 - HackerSploit: https://www.youtube.com/channel/UC0ZTPkdxlAKf-V33tqXwi3Q
 
 ### Random Links
+
 - Stuff about CS: https://www.geeksforgeeks.org/
 - JAMStack Tools: https://www.tnd.dev/
 - JavaScript : https://javascript.info/
@@ -212,7 +231,6 @@ Debugging / Logging
 - Web Hosting: https://www.hetzner.com/dedicated-rootserver/matrix-px
 - Website Templates For React/Vue: https://www.wrappixel.com/
 
-
 ## DOCKER TRICKS
 
 ### Starting a Docker instance
@@ -221,13 +239,14 @@ Debugging / Logging
 2. Get image you want `docker pull some-linux-image`
 3. Run the image `docker run -ti some-linux-image /bin/bash`
 
-> **_NOTE:_**  Once exited, the container is stopped. You can restart it by `docker ps -a` and with the name of the container `docker start -ai <NAME_CONTAINER>`
+> **_NOTE:_** Once exited, the container is stopped. You can restart it by `docker ps -a` and with the name of the container `docker start -ai <NAME_CONTAINER>`
 
 4. Some basic setups inside the docker VM:
-    1. `apt update`
-    2. `apt dist-upgrade`
-    3. `apt autoremove`
-    4. `apt clean`
+
+   1. `apt update`
+   2. `apt dist-upgrade`
+   3. `apt autoremove`
+   4. `apt clean`
 
 5. The VM is now ready to use, install whathever you want...
 
@@ -238,29 +257,27 @@ Debugging / Logging
 3. Run it back `docker run -ti my-kali /bin/bash`
 4. List all committed images `docker images`
 
-> **_NOTE:_**  There are two ways to create a Docker image, (1) write a Dockerfile and run docker build on it, (2) run a container, make changes and run docker commit to create a new image. Committing a container to create a new image is not ideal. Dockerfiles for reproducible images (see repo https://github.com/C00kieMonsta/kali-image).
+> **_NOTE:_** There are two ways to create a Docker image, (1) write a Dockerfile and run docker build on it, (2) run a container, make changes and run docker commit to create a new image. Committing a container to create a new image is not ideal. Dockerfiles for reproducible images (see repo https://github.com/C00kieMonsta/kali-image).
 
 #### Restart a container
 
 1. Get container ID `docker ps -a`
 2. Restart specific container `docker start -ai <CONTAINER ID>`
 
-> **_NOTE:_**  An Image is blueprint/snapshot of a container. So the container is like an instance of this Image. Each time the image is being run, it creates a new container.
-
+> **_NOTE:_** An Image is blueprint/snapshot of a container. So the container is like an instance of this Image. Each time the image is being run, it creates a new container.
 
 ### Kali Linux Instance
 
-> **_NOTE:_**  A Debian-derived Linux distribution designed for digital forensics and penetration testing.
+> **_NOTE:_** A Debian-derived Linux distribution designed for digital forensics and penetration testing.
 
 1. Get Kali image `docker pull kalilinux/kali-rolling`
 2. Run the image `docker run -ti kalilinux/kali-rolling /bin/bash`
 3. Basic setups
 4. Installing Hydra for brute force code breaking
-    1. `apt install hydra`
-    2. `apt install hydra hydra-gtk`
-    3. `apt install wordlists`
-    4. `gunzip /usr/share/wordlists/rockyou.txt.gz`
-
+   1. `apt install hydra`
+   2. `apt install hydra hydra-gtk`
+   3. `apt install wordlists`
+   4. `gunzip /usr/share/wordlists/rockyou.txt.gz`
 
 ### Setup SSH on Instance
 
@@ -270,7 +287,6 @@ Debugging / Logging
 4. You then want to start the ssh server: `service ssh start`
 5. Next you want to know the local IP address of the VM (you might need to install the `net-tool` package): `ifconfig`
 6. On you machine, open a bash console and run: `ssh root@<ip>`
-
 
 ## PYTHON TIPS
 
@@ -286,14 +302,13 @@ Debugging / Logging
 `python -m pip install numpy`
 `python -m pip install matplotlib`
 
-
 ## BASH TIPS
 
 ### How to create a bash script
 
 1. Turn on executable mode for your script: `chmod +x myscript.sh`
 2. Start your script with an interpreter string `#!/bin/bash`
-3. If script sits in `~/bin`, export the `PATH` in  `~/.profile`: `export PATH="$HOME/bin:$PATH"`
+3. If script sits in `~/bin`, export the `PATH` in `~/.profile`: `export PATH="$HOME/bin:$PATH"`
 
 ### Where to put bash script
 
@@ -305,7 +320,6 @@ Debugging / Logging
 
 - Create bash scripts: http://linuxcommand.org/lc3_writing_shell_scripts.php
 - Using screen command: https://linuxize.com/post/how-to-use-linux-screen/
-
 
 ## CODE SNIPPETS
 
@@ -349,7 +363,7 @@ precmd() { vcs_info }
 
 # Format the vcs_info_msg_0_ variable
 zstyle ':vcs_info:git:*' formats ' %F{6}[⏎%b]%f'
- 
+
 # Set up the prompt (with git branch name)
 setopt PROMPT_SUBST
 PROMPT='%F{208}%n%f@%F{226}%~%f${vcs_info_msg_0_} > '
